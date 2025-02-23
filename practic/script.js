@@ -110,3 +110,27 @@ const str = 'Hello'
 for (const char of str) {
     console.log(char);
 }
+
+//Вычислить сумму чисел от 1 до 100 и вывести значение в консоль.
+let sum = 0
+for (let number = 1; number <= 100; number++) {
+  sum += number
+}
+console.log(sum) 
+
+//Выведите сумму всех элементов массива, используя цикл for.
+const array = [1, 2, 3, 4, 5]
+let sum = 0
+for (let i = 0; i < array.length; i++) {
+  sum += array[i]
+}
+console.log(sum)
+
+//Напишите цикл for, который изменяет массив животных, делая их прекрасными! Например, если есть следующий массив: let animals = ["Кот", "Рыба", "Лемур"] Цикл должен сделать его таким ["Кот - прекрасное животное", "Рыба - прекрасное животное", "Лемур - прекрасное животное"]
+let animals = ["Кот", "Рыба", "Лемур"];
+
+for (let i = 0; i < animals.length; i++) {
+    animals[i] += " - прекрасное животное";
+}
+
+console.log(animals);
